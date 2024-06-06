@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    color: #fefae0;
+    font-size: 50px;
+    font-family: 'cerebi',sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+
+
+body{
+    width: 98%;
+    height: 98%;
+    background-color: #22223b;
+}
+p{  color: #b0aaa3;
+    font-size: 25px;
+    flex: 0 0 50%;
+    font-family: 'cerebi',sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+a{
+    text-decoration: none;
+    color: #b0aaa3;
+    font-size: 25px;
+    transition: transform 0.5s, color 0.5s ease, stroke 0.2s;
+    font-family: 'cerebi',sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #ef476f;
+    width: 0%;
+    height: 3px;
+    top: 35%;
+    transition: 0.3s;
+}
+a:hover::after{
+    width: 100%;
+}
+a:hover{
+    transform: scale(1);
+    color: #fefae0;
+}
+
+
+#navbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#topnavbar{
+    margin-top: 20px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#intro{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#icons{
+    width: 60%;
+    margin-left: 250px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Saudi{
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+#Saudi::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(imgs/abdulrhman-alkhnaifer-kUANvJwGN4M-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease ;
+    pointer-events: none; /*basically disables mouse events for the img*/
+
+}
+#Saudi:hover::before{
+    opacity: 1;
+
+}
+
+#Coding{
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+#Coding::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(imgs/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease ;
+    pointer-events: none; /*basically disables mouse events for the img*/
+
+}
+#Coding:hover::before{
+    opacity: 1;
+
+}
+
+#Exeter{
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+#Exeter::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(imgs/exeter.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease ;
+    pointer-events: none; /*basically disables mouse events for the img*/
+
+}
+#Exeter:hover::before{
+    opacity: 1;
+
+}
+#text{
+    position: relative;
+    top: 100px;
+    width: 85%;
+}

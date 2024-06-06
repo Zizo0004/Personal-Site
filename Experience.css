@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cerebi";
+    src: url('fonts/Cerebri Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 90%;
+    width: 99%;
+    background-color: #22223b;
+}
+a{
+    text-decoration: none;
+    color: #b0aaa3;
+    font-size: 25px;
+    transition: transform 0.5s, color 0.5s ease, stroke 0.2s;
+    font-family: 'cerebi',sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+#download{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#download a:hover{
+    color: #fefae0;
+}
+
+#topnavbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #ef476f;
+    width: 0%;
+    height: 3px;
+    top: 35%;
+    transition: 0.3s;
+}
+#topnavbar a:hover::after{
+    width: 100%;
+}
+#topnavbar a:hover{
+    transform: scale(1);
+    color: #fefae0;
+}
+
+
+#navbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 2.5%;
+}
+
+#topnavbar{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
